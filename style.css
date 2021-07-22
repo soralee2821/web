@@ -1,41 +1,67 @@
-body{
-    margin:0;
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
 }
-a {
-    color:black;
-    text-decoration:none;
+
+header {
+  padding: 1em 0;
+  border-bottom: 1px solid #dddddd;
 }
-h1 {
-    font-size:45px;
-    text-align:center;
-    border-bottom:1px solid gray;
-    margin:0;
-    padding:20px;
+
+p {
+  margin: 0;
 }
-ol {
-    border-right:1px solid gray;
-    width:100px;
-    margin:0;
-    padding:20px;
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-#grid {
-    display:grid;
-    grid-template-columns: 150px 1fr;
+
+.container {
+  padding: 0 2em;
 }
-#grid ol {
-    padding-left:33px;
+
+.channel-title {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-left: 10px;
 }
-#grid #article {
-    padding-left:25px;
+
+.message-list {
+  margin: 2em 0;
 }
-@media(max-width:800px){
-    #grid {
-        display:block;
-    }
-    ol {
-        border-right:none;
-    }
-    h1 {
-        border-bottom:none;
-    }
+
+.message {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  margin: 1em;
+}
+
+.message .meta {
+  display: inline-block;
+}
+
+.message .time {
+  font-size: .8em;
+  color: #B0B0B0;
+}
+
+.message .username {
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.message .content {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.message img.content {
+  border-radius: 2px;
+  width: 150px;
+  height: 150px;
 }
